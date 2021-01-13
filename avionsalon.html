@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="#33f0ff">
+    <h1>Objednávka</h1>
+    <form name="roletka">
+        <select name="letenky" id="letenky" size="4">
+            <option class="letenka" id="praha" value="500">Praha 500 Kč</option>
+            <option class="letenka" id="frankfurt" value="3000">Frankfurt 3000 Kč </option>
+            <option class="letenka" id="newyork" value="15000">New York 15000 Kč</option>
+            <option class="letenka" id="sydney" value="30000">Sydney 30000 Kč</option>
+        </select>
+        <select name="pocetLetenek" id="pocetLetenek" size="1">
+            <option class="pocet" id="jedna" value="1">1</option>
+            <option class="pocet" id="dva" value="2">2</option>
+            <option class="pocet" id="tri" value="3">3</option>
+            <option class="pocet" id="ctyri" value="4">4</option>
+            <option class="pocet" id="pet" value="5">5</option>
+            <option class="pocet" id="sest" value="6">6</option>
+            <option class="pocet" id="sedm" value="7">7</option>
+            <option class="pocet" id="osm" value="8">8</option>
+            <option class="pocet" id="devet" value="9">9</option>
+            <option class="pocet" id="deset" value="10">10</option>
+        </select>
+    </form>
+    <br>
+    <form name="zpatecni">
+        <input type="checkbox" id="zpatecniLetenka">Zpáteční letenka
+    </form>
+    <br>
+    <form name="trida">
+        <input type="radio" name="doprava" id="dop1">Economy class - bez přirážky<br />
+        <input type="radio" name="doprava" id="dop2">Business class - + 25 procent k ceně<br />
+        <input type="radio" name="doprava" id="dop3">Royal class - + 50 procent k ceně<br />
+
+    </form>
+
+    <h3>Výsledná cena</h3>
+    <input type="text" name="celkem" id="celkem">
+    <h3>Zadejte kolik máte celkem k útratě</h3>
+    <input type="text" name="mame" id="mame">
+    <button id="vejdeSe">Vejdete se do ceny?</button><br><br>
+    <p id="vysledek"></p>
+
+    <form>
+        <textarea name="poznamky" id="poznamky" cols="40" rows="10">
+Poznámka:
+</textarea>
+<br><button id="konec">Odeslat objednávku</button>
+</form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="avionsalon.js"></script>
+</body>
+
+</html>
